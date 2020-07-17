@@ -1,3 +1,3 @@
-- Little clock with Electron -
+# Little clock with Electron 
 
 ![Clock image](clockelectron.png)
