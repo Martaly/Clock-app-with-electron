@@ -1,0 +1,14 @@
+{
+  "name": "clock-app-electron",
+  "version": "1.0.0",
+  "description": "small clock app with electron",
+  "main": "index.js",
+  "scripts": {
+  "start" :"electron ."
+  },
+  "author": "Aly aly.martin.97@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.1.0"
+  }
+}
