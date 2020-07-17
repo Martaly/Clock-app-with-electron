@@ -1,0 +1,93 @@
+body{
+    height: 350px;
+    width: 200px;
+  display: flex;
+  flex-direction: column;
+align-items: center;
+  justify-content: space-evenly;
+  background-color: #121822;
+}
+.clock{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+    
+}
+.clock #line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.clock #line #bord{
+    background: #b6735d;
+    height:15px;
+    width:15px;
+    border-radius: 5px;
+    margin:15px;
+    
+}
+.clock #hour{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 75px;
+    background: linear-gradient(45deg, #b6735d, #ecaf9e );
+    border-radius: 20% 60% 60% 20% / 20% 20% 60% 60%; 
+    animation: blob 15s infinite 0.5s;
+    color:#121822;
+    height:120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes blob{
+    0%{
+        border-radius : 20% 60% 60% 20% / 20% 20% 60% 60%; 
+    }
+    25%{
+        border-radius: 75% 25% 45% 55% / 30% 30% 70% 70%;
+    }
+    50%{
+        border-radius: 60% 50% 30% 75% / 60% 80% 25% 40%;
+    }
+    75%{
+        border-radius: 40% 60% 75% 30% / 75% 60% 45% 25%;
+    }
+    100%{
+        border-radius: 20% 60% 60% 20% / 20% 20% 60% 60%;
+    }
+}
+.clock #minute{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 75px;
+    background: linear-gradient(45deg,#b6735d, #ecaf9e );
+    border-radius: 60% 20% 20% 60% / 60% 60% 20% 20%; 
+    animation: blub 15s infinite 0.5s;
+    color:#121822;
+    height:120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes blub{
+    0%{
+        border-radius: 60% 20% 20% 60% / 60% 60% 20% 20%; 
+    }
+    25%{
+        border-radius: 40% 60% 75% 30% / 75% 60% 45% 25%;
+    }
+    50%{
+        border-radius: 60% 50% 30% 75% / 60% 80% 25% 40%;
+    }
+    75%{
+        border-radius: 75% 25% 45% 55% / 30% 30% 70% 70%;
+    }
+    100%{
+        border-radius: 60% 20% 20% 60% / 60% 60% 20% 20%; 
+    }
+}
